@@ -81,8 +81,13 @@ public class TicketMachine
             // Reduce the balance by the prince.
             balance = balance - price;
         }
-        else {
-            System.out.println("You must insert at least: " +
+        else 
+             
+        
+        {
+            int amountLeftToPay;
+            amountLeftToPay = (price-balance);
+            System.out.println("error el dinero que falta para poder comprar el billete es: " +
                                (price - balance) + " more cents.");
                     
         }
