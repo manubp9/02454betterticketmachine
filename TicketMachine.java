@@ -110,11 +110,18 @@ public class TicketMachine
      */ 
     public int emptyMachine()
     {
-        int totalMonedas; 
-        totalMonedas = total;
-        return totalMonedas;
+        if (balance==0){
+        
+            int totalMonedas; 
+            totalMonedas = total;
+            return totalMonedas;
+        }
+        else {
+            return-1;
+        }
+    }
     }
        
      
 
-}
+
